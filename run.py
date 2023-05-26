@@ -27,7 +27,7 @@ def exchangerate(currency):
 
 @app.route('/exchangerate/public', methods=['GET', 'POST'])
 def exchangeratepublic():
-    return getFXrates('CAD')
+    return getFXrates('CAD')['conversion_rates']
 
 ## APP LOGIC #####################################################################################
 def cyclosAuth(token):
